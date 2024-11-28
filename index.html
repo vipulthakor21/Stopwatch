@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="shortcut icon" href="images/stopwatch.png" type="image/x-icon" />
+    <link rel="stylesheet" href="stopwatch.css" />
+  </head>
+  <body>
+    <!-- ----------------------watch-------------------------------- -->
+    <div class="containeer">
+      <div class="timer-display">00 : 00 : 00 : 00</div>
+      <ul style="list-style-type: none" class="laps">
+        <!-- 00 : 00 : 00 : 00 -->
+      </ul>
+      <div class="action">
+        <button id="startTimer" onclick="start()">Start</button>
+        <button id="pauseTimer" onclick="pause()">Pause</button>
+        <button class="resetTimer" onclick="reset()">Reset</button>
+        <button class="restartTimer" onclick="restart()">Restart</button>
+        <button id="lap" onclick="lap()">Lap</button>
+        <button id="resetlap" onclick="resetlap()">Reset lep</button>
+      </div>
+    </div>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
